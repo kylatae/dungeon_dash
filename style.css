@@ -1,0 +1,78 @@
+body {
+  background-color: #333; /* Dark background for dungeon feel */
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.title {
+  color: #ccc; /* Off-white title for contrast */
+  margin-bottom: 20px;
+}
+
+#maze {
+  width: 600px; /* Adjust as needed */
+  height: 600px; /* Adjust as needed */
+  margin: 0 auto;
+  display: grid;
+  border: 2px solid #555; 
+  background-color: black;
+  grid-template-columns: repeat(11, 1fr); /* 10 columns */
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  background-color: #555; /* Dark gray buttons */
+  border: none;
+  color: #ccc;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* You can add classes later for walls, paths, start, end etc. */
+
+.cell {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.open {
+  background-color: white;
+}
+
+.blocked {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.player {
+  background-color: green;
+}
+
+.finish {
+  background-color: red;
+}
+
+/* Messages and Move Counter */
+#message, p { /* Targets any paragraph after .controls */
+  color: white;
+  margin: 10px; 
+  font-size: 18px; 
+  text-align: center;
+}
+
+/* New Game button */
+#newGameButton {
+  display: none; /* initially hidden */
+  padding: 10px 20px;
+  background-color: #555;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px auto;
+} 
