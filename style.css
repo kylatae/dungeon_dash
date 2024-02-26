@@ -10,8 +10,8 @@ body {
 }
 
 #maze {
-  width: 600px; /* Adjust as needed */
-  height: 600px; /* Adjust as needed */
+  width: 70vh; /* Adjust as needed */
+  height: 70vh; /* Adjust as needed */
   margin: 0 auto;
   display: grid;
   border: 2px solid #555; 
